@@ -108,18 +108,18 @@ class ToDoTableViewController: UITableViewController, ToDoCellDelegate {
             todo.isComplete = !todo.isComplete
             todos[indexPath.row] = todo
             tableView.reloadRows(at: [indexPath], with: .automatic)
-        }
-    }
-
-    // Function for if the complete button is tapped.
-    func completeButtonTapped(sender: ToDoCell) {
-        if let indexPath = tableView.indexPath(for: sender) {
-            var todo = todos[indexPath.row]
-            todo.isComplete = !todo.isComplete
-            tableView.reloadRows(at: [indexPath], with: .automatic)
             ToDo.saveToDos(todos)
         }
     }
+
+//    // Function for if the complete button is tapped.
+//    func completeButtonTapped(sender: ToDoCell) {
+//        if let indexPath = tableView.indexPath(for: sender) {
+//            var todo = todos[indexPath.row]
+//            todo.isComplete = !todo.isComplete
+//            tableView.reloadRows(at: [indexPath], with: .automatic)
+//        }
+//    }
 }
 
 

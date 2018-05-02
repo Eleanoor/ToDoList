@@ -141,18 +141,15 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egQ-m9-dd7">
-                                                    <rect key="frame" x="16" y="11" width="72" height="40"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="l0O-G9-cHD"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="16" y="11" width="72" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Dph-s7-uMj">
-                                                    <rect key="frame" x="0.0" y="51" width="375" height="160"/>
+                                                    <rect key="frame" x="-8" y="31.5" width="367" height="165"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="160" id="sxu-hU-gyf"/>
+                                                        <constraint firstAttribute="height" constant="165" id="sxu-hU-gyf"/>
                                                     </constraints>
                                                     <date key="date" timeIntervalSinceReferenceDate="546783374.19427502">
                                                         <!--2018-04-30 12:16:14 +0000-->
@@ -162,24 +159,21 @@
                                                     </connections>
                                                 </datePicker>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5T-j8-Fi1">
-                                                    <rect key="frame" x="303.5" y="11" width="71.5" height="40"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="bT6-u9-0uz"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="287.5" y="11" width="71.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="d5T-j8-Fi1" secondAttribute="trailing" id="3Mr-ni-o9t"/>
-                                                <constraint firstItem="d5T-j8-Fi1" firstAttribute="top" secondItem="ZFU-Vz-o2z" secondAttribute="topMargin" id="HNd-2M-EYc"/>
+                                                <constraint firstItem="d5T-j8-Fi1" firstAttribute="top" secondItem="ZFU-Vz-o2z" secondAttribute="top" constant="11" id="HNd-2M-EYc"/>
                                                 <constraint firstItem="Dph-s7-uMj" firstAttribute="top" secondItem="d5T-j8-Fi1" secondAttribute="bottom" id="I7t-Rj-nBd"/>
-                                                <constraint firstItem="egQ-m9-dd7" firstAttribute="leading" secondItem="ZFU-Vz-o2z" secondAttribute="leadingMargin" id="JUF-UA-5Cq"/>
-                                                <constraint firstItem="egQ-m9-dd7" firstAttribute="top" secondItem="ZFU-Vz-o2z" secondAttribute="topMargin" id="LL3-hD-eGD"/>
-                                                <constraint firstAttribute="trailing" secondItem="Dph-s7-uMj" secondAttribute="trailing" id="Pfq-0G-HEl"/>
-                                                <constraint firstItem="Dph-s7-uMj" firstAttribute="leading" secondItem="ZFU-Vz-o2z" secondAttribute="leading" id="X7H-He-s21"/>
-                                                <constraint firstAttribute="trailing" secondItem="d5T-j8-Fi1" secondAttribute="trailing" id="u7y-fZ-BUL"/>
+                                                <constraint firstItem="egQ-m9-dd7" firstAttribute="leading" secondItem="ZFU-Vz-o2z" secondAttribute="leading" constant="16" id="JUF-UA-5Cq"/>
+                                                <constraint firstItem="egQ-m9-dd7" firstAttribute="top" secondItem="ZFU-Vz-o2z" secondAttribute="top" constant="11" id="LL3-hD-eGD"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Dph-s7-uMj" secondAttribute="trailing" id="Pfq-0G-HEl"/>
+                                                <constraint firstAttribute="trailing" secondItem="d5T-j8-Fi1" secondAttribute="trailing" constant="16" id="Vnc-ES-8z5"/>
+                                                <constraint firstItem="Dph-s7-uMj" firstAttribute="leadingMargin" secondItem="ZFU-Vz-o2z" secondAttribute="leading" id="X7H-He-s21"/>
+                                                <constraint firstItem="d5T-j8-Fi1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="egQ-m9-dd7" secondAttribute="trailing" id="xcT-ok-cBe"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
